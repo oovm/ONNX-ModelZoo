@@ -1,0 +1,8 @@
+{
+    "references": [
+        {
+            "path": "./packages/model-progressive-gan"
+        }
+    ],
+    "files": []
+}

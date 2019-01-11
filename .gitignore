@@ -1,0 +1,16 @@
+# IDE
+.vs
+.vscode
+.idea
+*.iml
+
+# Build
+node_modules
+packages/*/dist
+
+# Model
+*.params
+*.onnx
+
+# yarn
+yarn.lock
