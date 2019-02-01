@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"op":"null","name":"Input","attrs":{},"inputs":[]},
+		{"op":"null","name":"1.Weights","attrs":{},"inputs":[]},
+		{"op":"null","name":"1.Biases","attrs":{},"inputs":[]},
+		{"op":"Convolution","name":"1","attrs":{"num_filter":"20","kernel":"(5, 5)","dilate":"(1, 1)","pad":"(0, 0)","stride":"(1, 1)","num_group":"1","no_bias":"False","layout":"None"},"inputs":[[0,0,0],[1,0,0],[2,0,0]]},
+		{"op":"relu","name":"2$0","attrs":{},"inputs":[[3,0,0]]},
+		{"op":"Pooling","name":"3","attrs":{"kernel":"(2, 2)","pad":"(0, 0)","stride":"(2, 2)","pool_type":"max","global_pool":"False","pooling_convention":"valid"},"inputs":[[4,0,0]]},
+		{"op":"null","name":"4.Weights","attrs":{},"inputs":[]},
+		{"op":"null","name":"4.Biases","attrs":{},"inputs":[]},
+		{"op":"Convolution","name":"4","attrs":{"num_filter":"50","kernel":"(5, 5)","dilate":"(1, 1)","pad":"(0, 0)","stride":"(1, 1)","num_group":"1","no_bias":"False","layout":"None"},"inputs":[[5,0,0],[6,0,0],[7,0,0]]},
+		{"op":"relu","name":"5$0","attrs":{},"inputs":[[8,0,0]]},
+		{"op":"Pooling","name":"6","attrs":{"kernel":"(2, 2)","pad":"(0, 0)","stride":"(2, 2)","pool_type":"max","global_pool":"False","pooling_convention":"valid"},"inputs":[[9,0,0]]},
+		{"op":"Flatten","name":"7","attrs":{},"inputs":[[10,0,0]]},
+		{"op":"null","name":"8.Weights","attrs":{},"inputs":[]},
+		{"op":"null","name":"8.Biases","attrs":{},"inputs":[]},
+		{"op":"FullyConnected","name":"8","attrs":{"num_hidden":"500","no_bias":"False"},"inputs":[[11,0,0],[12,0,0],[13,0,0]]},
+		{"op":"relu","name":"9$0","attrs":{},"inputs":[[14,0,0]]},
+		{"op":"null","name":"10.Weights","attrs":{},"inputs":[]},
+		{"op":"null","name":"10.Biases","attrs":{},"inputs":[]},
+		{"op":"FullyConnected","name":"10","attrs":{"num_hidden":"10","no_bias":"False"},"inputs":[[15,0,0],[16,0,0],[17,0,0]]},
+		{"op":"softmax","name":"11$0","attrs":{"axis":"1"},"inputs":[[18,0,0]]},
+		{"op":"identity","name":"Output","attrs":{},"inputs":[[19,0,0]]}
+	],
+	"arg_nodes":[0,1,2,6,7,12,13,16,17],
+	"heads":[
+		[20,0,0]
+	],
+	"attrs":{
+		"mxnet_version":["int",10001]
+	}
+}
