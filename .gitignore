@@ -1,11 +1,12 @@
 # IDE
-.vs
-.vscode
-.idea
+.vs/*
+.vscode/*
+.idea/*
 *.iml
 
 # Build
-node_modules
+share/*
+node_modules/*
 packages/*/dist
 
 # Model
