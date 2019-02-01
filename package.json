@@ -5,18 +5,15 @@
     ],
     "scripts": {
         "tsc": "tsc -b",
-        "dev": "tsc -b && yarn workspace vutex.github.io dev",
-        "build": "tsc -b && yarn workspace vutex.github.io build",
-        "bootstrap": "lerna bootstrap --no-ci --npm-client yarn",
-        "start": "yarn dev && start http://localhost:8080",
         "deploy": "bash build/deploy.sh",
-        "lint": "tslint */lib/*.ts && eslint .",
-        "lint:fix": "tslint */lib/*.ts --fix && eslint . --fix"
+        "lint": "tslint */source/*.ts",
+        "lint:fix": "tslint */source/*.ts --fix"
     },
     "devDependencies": {
         "@types/node": "^10.12.18",
         "semver": "^5.6.0",
         "ts-loader": "^5.3.2",
-        "typescript": "^3.2.2"
+        "typescript": "^3.2.2",
+        "tslint": "^5.12.1"
     }
 }

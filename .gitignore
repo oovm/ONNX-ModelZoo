@@ -11,6 +11,9 @@ packages/*/dist
 # Model
 *.params
 *.onnx
+*.wxf
+*.wmlf
+*.app
 
 # yarn
 yarn.lock
