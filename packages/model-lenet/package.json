@@ -5,8 +5,9 @@
     "author": "Aster <galaster@foxmail.com>",
     "license": "MPL",
     "main": "index.js",
-    "scripts": {
-
+    "scripts": {},
+    "dependencies": {
+        "onnxjs": "^0.1.3"
     },
     "devDependencies": {
         "@types/node": "^10.12.18"

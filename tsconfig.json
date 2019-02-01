@@ -1,6 +1,9 @@
 {
     "references": [
         {
+            "path": "./packages/model-lenet"
+        },
+        {
             "path": "./packages/model-progressive-gan"
         }
     ],
