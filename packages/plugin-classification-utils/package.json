@@ -1,0 +1,15 @@
+{
+    "name": "@onnx/plugin-classification-utils",
+    "version": "0.1.0",
+    "description": "the model template.",
+    "author": "name <email>",
+    "license": "MPL",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "scripts": {
+
+    },
+    "devDependencies": {
+        "@types/node": "^10.12.18"
+    }
+}
