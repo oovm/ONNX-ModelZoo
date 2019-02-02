@@ -1,7 +1,10 @@
 {
     "references": [
         {
-            "path": "./packages/model-lenet"
+            "path": "./packages/plugin-classification-utils"
+        },
+        {
+            "path": "./packages/model-lenet-mnist"
         },
         {
             "path": "./packages/model-progressive-gan"
