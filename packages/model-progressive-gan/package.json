@@ -1,0 +1,14 @@
+{
+    "name": "@onnx/model-progressive-gan",
+    "version": "0.1.0",
+    "description": "the model template.",
+    "author": "name <email>",
+    "license": "MPL",
+    "main": "index.js",
+    "scripts": {
+
+    },
+    "devDependencies": {
+        "@types/node": "^10.12.18"
+    }
+}
