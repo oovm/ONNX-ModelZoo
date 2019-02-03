@@ -1,8 +1,12 @@
-import onnx
-from onnx import shape_inference
+def shape_infer(original_model):
+    from onnx import shape_inference
+    inferred_model = shape_inference.infer_shapes(original_model)
+    return inferred_model
 
 
-def dynamic_onnx(path):
+def dynamic_batchsize(path):
+    import onnx
+    from onnx import shape_inference
     original_model = onnx.load(path)
     # print('Before shape inference, the shape info of Y is:\n{}'.format(original_model.graph.value_info))
     original_model.graph.input[0].type.tensor_type.shape.dim[0].dim_param = 'batchsize'
