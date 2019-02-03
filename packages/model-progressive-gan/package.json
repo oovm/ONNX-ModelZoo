@@ -2,11 +2,11 @@
     "name": "@onnx/model-progressive-gan",
     "version": "0.1.0",
     "description": "the model template.",
-    "author": "name <email>",
+    "author": "Aster <galaster@foxmail.com>",
     "license": "MPL",
     "main": "index.js",
     "scripts": {
-
+        "onnxjs": "^0.1.3"
     },
     "devDependencies": {
         "@types/node": "^10.12.18"

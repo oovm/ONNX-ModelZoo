@@ -6,8 +6,8 @@
     "scripts": {
         "tsc": "tsc -b",
         "deploy": "bash build/deploy.sh",
-        "lint": "tslint */source/*.ts",
-        "lint:fix": "tslint */source/*.ts --fix"
+        "lint": "tslint packages/**/*.ts",
+        "lint:fix": "tslint packages/**/*.ts --fix"
     },
     "devDependencies": {
         "@types/node": "^10.12.18",

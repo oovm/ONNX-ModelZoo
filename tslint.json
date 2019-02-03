@@ -7,5 +7,11 @@
         "no-var-requires": true,
         "member-access": false,
         "trailing-comma": true
+    },
+    "linterOptions": {
+        "exclude": [
+            "**/dist/**",
+            "*.d.ts"
+        ]
     }
 }
